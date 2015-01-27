@@ -1,0 +1,10 @@
+<h1><%= @category.name %></h1>
+<p>Created at: <%= @category.created_at %></p>
+
+<a href="/categories/<%= @category.id %>/edit">Edit Page</a>
+
+
+<form action="/categories/<%= @category.id %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" value="Delete">
+</form>

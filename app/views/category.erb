@@ -1,0 +1,9 @@
+<h1></h1>
+
+<% @posts.each do |entry| %>
+  <a href="/post/<%= entry.id %>"><%= entry.title %></a>
+  <p><%= entry.desc %></p>
+  <h2><%= entry.price %></h2>
+  <img src=<%= entry.url %>></img>
+  <br />
+<% end %>
